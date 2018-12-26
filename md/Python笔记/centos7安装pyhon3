@@ -1,0 +1,18 @@
+# centos安装python3
+
+## 1. 下载python3源码包
+- `wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz`
+
+## 2. 安装依赖
+- `yum install gcc zlib-devel libffi-devel openssl-devel`
+
+## 3. 解包 Python-3.7.1.tgz
+- `tar -xvzf Python-3.7.1.tgz`
+
+## 4. 进入解压目录
+- `cd Python-3.7.1`
+
+## 5. 执行如下命令
+- `./configure`
+- `make`
+- `make install`

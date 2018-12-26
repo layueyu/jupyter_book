@@ -1,0 +1,1 @@
+本教程使用FreeNAS 版本： FreeNAS-11.2-RC1

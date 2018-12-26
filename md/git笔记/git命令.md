@@ -1,0 +1,52 @@
+# git命令
+
+- 1. 创建版本库
+    - `git init `
+- 2. 添加修改到暂存区
+    - `git add 文件名`
+    - `git add .`
+- 3. 创建一个版本记录
+    - `git commit -m "描述信息" `
+- 4. 查看版本记录
+    - ` git log `
+- 5. 回归到某个版本
+    - ` git reset --hard HEAD^`  回归到上一个版本
+    - ` git reset --hard HEAD^^` 回归到上上个版本
+    - ` git reset --hard HEAD~N` 回归到前N个版本
+- 6. 回到某个版本(如版本号)
+    - ` git reset --hard 版本序列号` 
+- 7. 查看操作记录
+    - ` git reflog `
+- 8. 查看当前工作的状态
+    - ` git status`
+- 9. 撤销文件修改（未放到暂存区）
+    - ` git checkout -- 文件名`
+- 10. 取消暂存文件
+    - ` git reset HEAD 文件名`
+- 11. 对比文件的不同(工作区与版本库之间)
+    - ` git diff HEAD -- 文件名`
+- 12.  对比文件的不同(版本与版本之间)
+    - ` git diff HEAD HEAD^-- 文件名`
+- 13. 删除文件
+    - ` git rm 文件名`  直接提交到暂存区
+    - ` rm 文件名` 删除文件后，需要手动提交到暂存区
+- 14. 查看分支
+    - ` git branch `
+- 15. 创建分支
+    - ` git branch 分支名称`
+- 16. 切换分支
+    - ` git checkout 分支名称`
+- 17. 创建分支并切换其上工作
+    - ` git checkout -b 分支名称`
+- 18. 合并某分支到当前分支
+    - ` git merge 分支名称`
+    - ` git merge --no-ff -m "描述信息" 分支名称` 禁用快速提交模式（fast-forward）
+- 19. 删除分支
+    - ` git branch -d 分支名称`
+- 20. 保存现场
+    - ` git stash `
+- 21. 查看保存工作现场列表  
+    - ` git stash list `
+- 22. 恢复现场
+    - ` git stash pop `
+
